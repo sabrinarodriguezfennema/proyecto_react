@@ -1,0 +1,153 @@
+[
+    {
+        "nombre": "Sweater Mora",
+        "stock": 5,
+        "precio": "45999.00",
+        "imagen": "https://media.istockphoto.com/id/1276519317/photo/woman-clothes-and-accessories-set-on-white-background-womens-warm-sweater-jeans-sneakers.jpg?s=612x612&w=0&k=20&c=746oNm8Pvp_S3DDe5pjkHW4grJsbGwWr7waLEkktfdk=",
+        "id": "1",
+        "detalle" : "El suéter es una prenda cálida y confortable, ideal para los días frescos de otoño e invierno. Está confeccionado en un tejido de punto grueso, que ofrece una textura suave y mullida, proporcionando abrigo sin sacrificar estilo. Su color es un beige claro, un tono neutro y versátil que combina fácilmente con distintas prendas y accesorios, aportando un aire natural y elegante al look. El diseño presenta un cuello redondo clásico y mangas largas con puños ajustados, que ayudan a conservar el calor y darle estructura a la prenda. El corte es ligeramente holgado, ofreciendo comodidad y un estilo relajado pero cuidado. Este suéter es perfecto para combinar con jeans, pantalones de tela o faldas, y puede usarse tanto para ocasiones casuales como para un look más arreglado cuando se combina con accesorios adecuados. "
+    },
+    {
+        "nombre": "Sweater Cairo",
+        "stock": 12,
+        "precio": "22990.00",
+        "imagen": "https://media.istockphoto.com/id/1415458741/photo/flat-lay-with-women-casual-outfit-on-white-bed-sheet-top-view.jpg?s=612x612&w=0&k=20&c=n_2sYRN4nJhxluGL4AfIhzkgcKTpRzmlDQAe69HRFtA=",
+        "id": "2",
+        "detalle" : "El suéter mostrado es una prenda cómoda y casual, perfecta para los días frescos de entretiempo. Está confeccionado en un tejido de punto medio, que combina suavidad y calidez sin resultar demasiado pesado. El color es un rosa pálido o pastel, un tono suave y femenino que aporta delicadeza y un toque de color sutil al conjunto, facilitando su combinación con prendas en tonos neutros o denim. El diseño presenta un cuello redondo clásico, mangas largas y un corte ligeramente holgado, lo que garantiza libertad de movimiento y comodidad. El acabado en los puños y el borde inferior es ajustado, lo que ayuda a mantener la forma del suéter y evita que se deslice. Este suéter es ideal para usarlo solo o superpuesto bajo chaquetas o abrigos ligeros, perfecto para un look casual, relajado y con estilo sencillo."
+    },
+    {
+        "nombre": "Pantalon Mimo",
+        "stock": 3,
+        "precio": "74999.00",
+        "imagen": "https://media.istockphoto.com/id/1309252001/photo/overhead-view-of-womans-casual-spring-summer-outfit-jeans-white-blouse-sandals-and-bouquet-of.jpg?s=612x612&w=0&k=20&c=ZMW70g-imD1ZhsVoQ0m2K74e1lL-6sRvTnOLRghdQXI=",
+        "id": "3",
+        "detalle" : "El pantalón es una prenda casual confeccionada en mezclilla de color azul claro lavado, que aporta frescura y un estilo desenfadado ideal para las temporadas de primavera y verano. Su tejido es suave y cómodo, permitiendo movilidad y comodidad durante todo el día. El corte es recto y clásico, con un tiro medio que se ajusta cómodamente a la cintura y ofrece una silueta relajada sin ser demasiado holgado. El largo del pantalón llega hasta los tobillos, lo que lo hace perfecto para combinar con sandalias o calzado bajo. Presenta detalles tradicionales de jeans como costuras visibles en contraste, bolsillos delanteros y traseros funcionales, y cierre frontal con botón y cremallera. La textura ligeramente desgastada y el lavado uniforme aportan un aire casual y moderno a la prenda.."
+    },
+    {
+        "nombre": "Campera Milena",
+        "stock": 10,
+        "precio": "35990.00",
+        "imagen": "https://media.istockphoto.com/id/1242180473/photo/collage-of-women-fashion-clothes-with-accessories.jpg?s=612x612&w=0&k=20&c=GdjZMZzvk1PO4j0L9SQLpjumqDE9m1mCLhDNZ4-6gMQ=",
+        "id": "4",
+        "detalle" : "La campera es una prenda de estilo casual y moderno, confeccionada en un tejido de denim azul clásico, que le da un aire atemporal y versátil. Este tipo de tela es resistente y perfecta para el uso diario, ideal para transiciones entre estaciones como primavera y otoño. El diseño presenta un corte recto y ligeramente ajustado, que favorece la figura sin ser restrictivo, permitiendo comodidad y libertad de movimiento. La campera incluye detalles tradicionales del denim, como botones metálicos frontales para cierre, dos bolsillos con solapa en el pecho y costuras reforzadas visibles que aportan carácter y estructura. Las mangas son largas, terminadas en puños abotonados, lo que permite ajustar el ancho según la preferencia. Además, la campera tiene una solapa clásica en el cuello que aporta un toque estilizado y funcional. "
+    },
+    {
+        "nombre": "Jean Paris",
+        "stock": 7,
+        "precio": "27989.00",
+        "imagen": "https://media.istockphoto.com/id/2201106156/photo/a-stylish-and-trendy-flat-lay-of-daily-essentials-like-a-designer-bag-headphones-denim-jeans.jpg?s=612x612&w=0&k=20&c=bC8fdeHhF50f3XPHvcaiwE4LxdJBzOf87NKp4DawnOs=",
+        "id": "5",
+        "detalle" : "El jean es una prenda clásica de mezclilla en un tono azul índigo oscuro, que aporta un estilo versátil y atemporal. Está confeccionado en un tejido de mezclilla resistente pero cómodo, ideal para el uso diario. El corte es recto o slim fit, ajustado pero sin ser excesivamente ceñido, ofreciendo un equilibrio entre estilo y comodidad. Presenta detalles tradicionales como costuras visibles en tonos contrastantes y un acabado ligeramente desgastado que añade un toque casual y moderno. El pantalón cuenta con los clásicos cinco bolsillos funcionales, cinturilla con trabillas para cinturón y cierre con botón y cremallera, manteniendo la estética tradicional del jean. Este modelo es perfecto para combinar con prendas casuales y deportivas, y se adapta bien a diferentes estilos, desde un look relajado hasta uno más pulido."
+    },
+    {
+        "nombre": "Camisa Lilo",
+        "stock": 8,
+        "precio": "18990.00",
+        "imagen": "https://media.istockphoto.com/id/1160533209/photo/female-fashion-clothes-flat-lay-square.jpg?s=612x612&w=0&k=20&c=qnrP8AQgbrQlcFPK0tVAW-1B-abTlHiGQAeP5_FY-Qw=",
+        "id": "6",
+        "detalle" : "La camisa que se observa en la imagen es una prenda femenina de estilo clásico y elegante, confeccionada en un tejido ligero y transpirable, probablemente algodón o una mezcla con lino, que ofrece comodidad y frescura ideal para climas templados y cálidos. El color principal es un blanco puro y limpio, que aporta luminosidad y versatilidad, permitiendo múltiples combinaciones con otras prendas y accesorios. El diseño presenta un cuello clásico tipo camisa con botones frontales que recorren toda la longitud, facilitando el ajuste y el uso. Las mangas son largas y terminan en puños abotonados, lo que permite adaptar la prenda para un look más formal o casual si se arremangan. El corte de la camisa es recto y ligeramente holgado, brindando comodidad sin perder elegancia."
+    },
+    {
+        "nombre": "Blazer Milan",
+        "stock": 6,
+        "precio": "32990.00",
+        "imagen": "https://media.istockphoto.com/id/1215648870/photo/overhead-flat-lay-view-woman-clothes-black-and-white.jpg?s=612x612&w=0&k=20&c=lSc4pioD_XzQ0Do4VLw--9B2jQ13uo2ry670EJed-8k=",
+        "id": "7",
+        "detalle": "El blazer que se observa en la imagen es una prenda elegante y sofisticada, diseñada para complementar looks formales y casuales con un toque moderno. Está confeccionado en un tejido de color negro sólido, que aporta versatilidad y un estilo atemporal, ideal para múltiples ocasiones. El corte es ajustado y estructurado, diseñado para realzar la figura femenina con líneas definidas y un fit impecable. Presenta solapas clásicas de muesca y un cierre frontal con un botón que permite ajustar la prenda y aportar un acabado pulido. Las mangas son largas y de corte recto, terminando en puños simples que mantienen la limpieza del diseño. El blazer incluye detalles como bolsillos frontales con solapa, que combinan funcionalidad y estilo sin romper la estética minimalista. "
+    },
+    {
+        "nombre": "Camisa Seda Fria",
+        "stock": 4,
+        "precio": "49900.00",
+        "imagen": "https://media.istockphoto.com/id/1400185144/photo/womens-clothing-viscose-blouse-cotton-bermuda-shorts-leather-sandals-and-cross-body-bag-on-a.jpg?s=612x612&w=0&k=20&c=mtVVH40xgnKFmjA0tkujEHiqy7hVJIqtNNzVaOdLxBU=",
+        "id": "8",
+        "detalle" : "La camisa que se observa en la imagen es una prenda femenina confeccionada en un tejido de viscosa ligero y fluido, lo que le aporta un tacto suave y una caída elegante, ideal para climas cálidos y para lograr un look fresco y sofisticado. El color de la camisa es un beige claro neutro, muy versátil y fácil de combinar, que brinda un aire natural y luminoso al conjunto. El diseño presenta mangas largas con puños abotonados, que pueden ser arremangadas para un estilo más relajado y casual. El cuello es clásico, estilo camisa, con botones delanteros que permiten ajustar la abertura al gusto, facilitando diferentes estilos, desde más formales hasta más desenfadados. La silueta de la camisa es ligeramente holgada, favoreciendo la comodidad sin perder elegancia. "
+    },
+    {
+        "nombre": "Sweater Tejido",
+        "stock": 9,
+        "precio": "25990.00",
+        "imagen": "https://media.istockphoto.com/id/1454408351/photo/flat-lay-with-women-casual-outfit-on-white-bed-sheet-top-view.jpg?s=612x612&w=0&k=20&c=zficYVxsTHXSI27IAwr8GvrOm_RLTSyhn6Nx1FlRC5U=",
+        "id": "9",
+        "detalle" : "El suéter mostrado en la imagen es una prenda casual y cómoda, diseñada para brindar calidez ligera y estilo sencillo. Está confeccionado en un tejido de punto fino, probablemente mezcla de algodón o acrílico, que aporta suavidad y una textura agradable al tacto. El color es un beige claro o camel suave, un tono neutro y cálido que facilita la combinación con diversas prendas y accesorios, ideal para looks de día a día en estaciones como otoño o primavera. El suéter tiene un cuello redondo clásico, que aporta un diseño limpio y versátil. Las mangas son largas y el corte general es ligeramente holgado, lo que garantiza comodidad y libertad de movimiento sin perder un aspecto cuidado. Este suéter es perfecto para llevar solo o en capas bajo chaquetas o abrigos más pesados. Su estilo minimalista lo convierte en una pieza básica esencial dentro de cualquier guardarropa casual y atemporal."
+    },
+    {
+        "nombre": "Trench Maddy",
+        "stock": 11,
+        "precio": "31990.00",
+        "imagen": "https://media.istockphoto.com/id/1184393434/photo/modern-beige-coat-jeans-and-white-trainers-lying-on-the-white-sheet.jpg?s=612x612&w=0&k=20&c=kpGvqFiqgpuLYZk7cbiLlVuloIEXzKqelmeB_ojoQ0k=",
+        "id": "10",
+        "detalle" : "El trench coat que se observa en la imagen es una prenda clásica y atemporal, ideal para complementar looks de entretiempo con estilo y funcionalidad. Está confeccionado en un tejido de color beige claro, un tono neutro y elegante que facilita su combinación con diversas prendas y colores. El diseño es de corte tradicional, con un largo que llega aproximadamente a la mitad del muslo, proporcionando protección y cobertura sin sacrificar la movilidad. Presenta detalles característicos de esta prenda, como solapas anchas, un cinturón ajustable en la cintura para marcar la silueta y realzar la figura, y botones frontales dobles que permiten un cierre seguro y estilizado. Las mangas son largas y cuentan con correas ajustables en los puños, un detalle funcional que también aporta un toque distintivo."
+    },
+    {
+        "nombre": "Jean Roma",
+        "stock": 7,
+        "precio": "41990.00",
+        "imagen": "https://media.istockphoto.com/id/1415601052/photo/womens-clothing-set-long-sleeve-striped-pullover-crossbody-bag-gray-jeans-suede-chelsea-boots.jpg?s=612x612&w=0&k=20&c=MNwKnPw8UhJX2UeMiHGdLTgGxL3hNkipncuO10g94CE=",
+        "id": "11",
+        "detalle" : "El jean que se muestra en la imagen es una prenda de estilo casual y contemporáneo, diseñada para brindar comodidad y versatilidad en el día a día. Está confeccionado en un tejido clásico de mezclilla de color gris medio, un tono neutro que permite combinaciones fáciles y modernas, alejándose del tradicional azul para ofrecer una alternativa más urbana y sofisticada. El corte del jean es ajustado (skinny fit), ceñido al cuerpo desde la cadera hasta el tobillo, lo que ayuda a estilizar la figura y ofrece un look pulido sin perder comodidad. La cintura es de tiro medio, proporcionando un equilibrio entre soporte y libertad de movimiento. Presenta detalles clásicos como costuras visibles, bolsillos delanteros y traseros funcionales, y cierre con botón y cremallera, manteniendo la estética tradicional de la prenda.   "
+    },
+    {
+        "nombre": "Pijama Cielo",
+        "stock": 5,
+        "precio": "58990.00",
+        "imagen": "https://media.istockphoto.com/id/2199864257/photo/black-trendy-pajamas-sleeping-mask-and-accessories-on-bed-top-view.jpg?s=612x612&w=0&k=20&c=lFQ4VMj3n_jKpw2nbdEviieOHBuyzkMGHY7bC9zQnO8=",
+        "id": "13",
+        "detalle" : "El pijama que se observa en la imagen es un conjunto moderno y elegante, diseñado para ofrecer máxima comodidad durante el descanso nocturno. Está confeccionado en un tejido liso de color negro profundo, lo que le confiere un aspecto sofisticado y atemporal. El conjunto incluye una camisa de manga larga con botones frontales que facilitan su colocación y ajuste. El corte de la camisa es relajado, permitiendo libertad de movimiento y confort durante el sueño. Los bordes de la camisa están rematados con un sutil ribete en contraste blanco, que añade un toque distintivo y estilizado sin perder la sobriedad del diseño. El pantalón del pijama es de corte recto y cómodo, con cintura elástica que garantiza un ajuste adaptable y sin restricciones. Este diseño sencillo y funcional prioriza el bienestar, sin sacrificar la estética, haciendo que el conjunto sea ideal tanto para dormir como para momentos de relajación en casa."
+    },
+    {
+        "nombre": "Short Mia",
+        "stock": 3,
+        "precio": "39990.00",
+        "imagen": "https://media.istockphoto.com/id/689911058/photo/fashion-summer-women-clothes-set.jpg?s=612x612&w=0&k=20&c=_yaOoxJKTjx8Kzfz0LfwiAC5R8CYh9XJ6X_6z8NLoxw=",
+        "id": "14",
+        "detalle" : "El short que se observa en la imagen es una prenda femenina diseñada para la comodidad y el estilo durante la temporada de verano. Está confeccionado en un tejido ligero, posiblemente algodón o lino, que favorece la transpiración y mantiene una sensación fresca en climas cálidos. De color beige claro, el short presenta un tono neutro y versátil, que facilita la combinación con una amplia variedad de prendas y accesorios. Su diseño es clásico y sencillo, con una cintura alta que ayuda a estilizar la figura y aportar un aire moderno y favorecedor. El corte del short es recto y ligeramente suelto, lo que brinda libertad de movimiento y comodidad para el uso diario. La longitud es corta, llegando a la parte superior del muslo, ideal para paseos casuales, salidas al aire libre o actividades recreativas. Este short incluye detalles funcionales como bolsillos laterales, que aportan practicidad sin comprometer el diseño limpio y minimalista."
+    },
+    {
+        "nombre": "Sweater Calipso",
+        "stock": 10,
+        "precio": "19990.00",
+        "imagen": "https://media.istockphoto.com/id/2175076607/photo/aesthetic-details-t-shirt-socks-laptop-notebooks-camera-on-a-light-background-top-view.jpg?s=612x612&w=0&k=20&c=WuOvXGoP-Q4lavokDwz--rX6LeivqO6JwIux82oyF10=",
+        "id": "15",
+        "detalle": "El suéter que se observa en esta imagen es una prenda de punto que combina funcionalidad y estilo con un diseño sencillo y atemporal. Está confeccionado en un tejido de punto fino a medio, lo que le brinda una textura suave y cómoda, ideal para climas templados o como una capa ligera en estaciones más frescas. Su color es un gris claro neutro, lo que aporta versatilidad y facilidad para combinarlo con diferentes prendas y estilos. El diseño presenta un cuello redondo clásico, que mantiene la simplicidad y la elegancia casual de la pieza. Las mangas son largas y de corte ajustado, mientras que el cuerpo del suéter tiene un ajuste ligeramente holgado que proporciona comodidad sin perder la forma. Esta silueta equilibrada permite usarlo tanto de manera informal como en contextos más relajados de oficina o estudio."
+    },
+    {
+        "nombre": "Camisa Thima",
+        "stock": 6,
+        "precio": "48990.00",
+        "imagen": "https://media.istockphoto.com/id/2178858220/photo/casual-summer-outfit-arrangement-on-bed-featuring-light-clothing-and-stylish-hat.jpg?s=612x612&w=0&k=20&c=JtjBa6UNR3DBAhGn_vU9reQQJUyOxx1pQWKPZWTJN8s=",
+        "id": "16",
+        "detalle":"La camisa que se muestra en esta imagen es una prenda ideal para un look veraniego casual y fresco. Está confeccionada en un tejido ligero y transpirable, posiblemente lino o una mezcla de algodón y lino, que la hace perfecta para los días cálidos al permitir la circulación del aire y ofrecer comodidad. El color de la camisa es un beige claro o tono arena, un tono neutro y versátil que evoca naturalidad y frescura, facilitando su combinación con otras prendas y accesorios. El diseño es de manga larga, con las mangas cuidadosamente arremangadas para aportar un estilo relajado y práctico. Cuenta con un cuello clásico de camisa, que añade un toque elegante sin perder su carácter informal. El cierre frontal es con botones, típicos de las camisas tradicionales, y el corte general es ligeramente holgado, proporcionando libertad de movimiento y un ajuste cómodo sin ceñirse al cuerpo. "
+    },
+    {
+        "nombre": "Vestido Lara",
+        "stock": 8,
+        "precio": "22990.00",
+        "imagen": "https://media.istockphoto.com/id/827021326/photo/creative-woman-background-clothes-and-accessories-collage-on-white-background-flat-lay-top-view.jpg?s=612x612&w=0&k=20&c=pE6R_y_udoiEqu8BSdN0T3fXgxMHxAKEswirh4TFmhc=",
+        "id": "17",
+        "detalle" : "El vestido destacado en esta imagen es una prenda femenina de verano, pensada para un look fresco, relajado y estilizado. Se trata de un vestido sin mangas en color coral claro (una tonalidad entre rosado y anaranjado), ideal para estaciones cálidas por su color vibrante y su confección ligera.El diseño del vestido es de corte recto y holgado, lo que proporciona comodidad y libertad de movimiento. Está confeccionado en un tejido fluido y liviano, probablemente de algodón, viscosa o una mezcla similar, que permite una buena transpiración y una caída natural del tejido. Uno de los elementos distintivos de este vestido es su escote en V, que aporta un toque de feminidad y estiliza visualmente el cuello y el rostro. El escote está reforzado con una costura sutil o una terminación limpia que mantiene su forma sin perder suavidad en el diseño. "
+    },
+    {
+        "nombre": "Vestido Luz",
+        "stock": 9,
+        "precio": "27990.00",
+        "imagen": "https://media.istockphoto.com/id/1224554520/photo/womens-clothing-with-personal-accessories.jpg?s=612x612&w=0&k=20&c=VkC-3KONSxQtbZgGIijEJ5V6w4upSPKw5QFs9g1Je2Y=",
+        "id": "18",
+        "detalle" : "El vestido que se muestra en esta imagen es una prenda femenina de estilo casual y versátil, ideal para el uso diario o para salidas informales. De color mostaza suave, se distingue por su tono cálido y terroso, alineado con tendencias contemporáneas que combinan lo natural con lo moderno. Está confeccionado en un tejido liviano que aparenta ser de algodón o una mezcla de fibras similares, lo cual le confiere una textura suave, respirable y agradable al tacto. El diseño es de manga larga, lo que lo hace adecuado para estaciones como la primavera, el otoño o incluso para días más frescos en verano. Las mangas parecen ser ligeramente sueltas, ofreciendo un look relajado y cómodo. El vestido presenta un corte camisero, con botones en la parte frontal que recorren el cuerpo desde el cuello hasta el dobladillo. "
+    },
+    {
+        "nombre": "Polera Cloe",
+        "stock": 4,
+        "precio": "46990.00",
+        "imagen": "https://media.istockphoto.com/id/1344598848/photo/autumn-warm-clothing-beige-colored-folded-knitted-wear-hat-scarf-gloves-sweater-female.jpg?s=612x612&w=0&k=20&c=14urv9TwAHQ2wzDvQ_Alh0oh4fvrJxLMKGIE4lyBC1Y=",
+        "id": "19",
+        "detalle" : "La prenda destacada en esta imagen es una polera de punto grueso, cuidadosamente doblada y presentada como parte de un conjunto de ropa otoñal en tonos neutros y cálidos. De color beige claro, esta polera transmite una sensación inmediata de suavidad, confort y abrigo, ideal para las estaciones frías como el otoño y el invierno. Confeccionada en un tejido de punto de grosor medio a grueso, la textura de la polera es claramente visible, compuesta por tramas entrelazadas que no solo aportan calidez sino también un atractivo estético clásico y acogedor."    },
+    {
+        "nombre": "Vestido Lunares",
+        "stock": 15,
+        "precio": "19000.00",
+        "imagen": "https://media.istockphoto.com/id/1235611009/photo/summer-brown-polka-dot-sleeveless-dress-suede-sandals-leather-crossbody-bag-sunglasses-and.jpg?s=612x612&w=0&k=20&c=Nfy2nGjKgGhADIOQHu0Wu_6KjnLPnvQbJhka5vdvTls=",
+        "id": "20",
+        "detalle":"El vestido sin mangas que se muestra en la imagen es una prenda de estilo veraniego con un diseño que combina frescura, feminidad y un aire retro sutil. Confeccionado en una tela ligera y fluida, el vestido presenta un tono marrón cálido como color base, decorado con un patrón uniforme de lunares blancos, también conocidos como polka dots, que evocan un estilo clásico y atemporal.Su corte sin mangas lo convierte en una opción ideal para climas cálidos, permitiendo libertad de movimiento y ventilación. El escote es redondeado y sobrio, manteniendo un equilibrio entre informalidad y elegancia. La cintura está ligeramente marcada, probablemente con una costura o elástico, lo que realza la silueta femenina sin ajustarla en exceso."
+    }
+]

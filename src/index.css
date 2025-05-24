@@ -1,0 +1,24 @@
+*{
+  margin: 0%;
+}
+body{
+  font-family: "Lato", sans-serif;
+}
+.imagenGeneral {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+:root {
+  --header-height: 65px;
+}
+
+header {
+  height: var(--header-height);
+}
+
+main {
+  margin-top: var(--header-height);
+}
