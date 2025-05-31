@@ -1,13 +1,15 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import Header from '../components/estaticos/Header'
 import Footer from '../components/estaticos/Footer'
 import './styles/SobreNosotros.css'
 import loading from '../assets/loading.gif'
+import { CartContext } from '../context/CartContext'
 
-const SobreNosotros = ({ cargando, cart, agregarCarrito, quitarCarrito }) => {
+const SobreNosotros = () => {
+  const { cargando } = useContext(CartContext);
   return (
     <div>
-      <Header agregarCarrito={agregarCarrito} quitarCarrito={quitarCarrito} cartItems={cart} />
+      <Header />
       <main>
         {cargando ? <img src={loading} alt='loading' style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '9999', width: '50px', height: '50px' }} /> :
           <div>

@@ -27,7 +27,7 @@
 }
 
 .cart-content {
-  margin:10px;
+  margin: 10px;
 }
 
 .close-button {
@@ -50,17 +50,23 @@
 
 
 .qtyButton {
-  margin: 5px;
   background: none;
-  border-radius: 100px;
   cursor: pointer;
   font-style: 18px;
   font-weight: 600;
-  border: 0.5px solid #000;
-  height: 30px;
-  width: 30px;
+  margin:  4px;
+  border: none;
+  
+}
+
+.cantidadProducto {
+  margin:  5px 0px;
+  background: none;
+  padding: 0px 10px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 .qtyButton:hover {
-  animation: pulse 0.4s;
+   transform: scale(1.05);
 }

@@ -24,38 +24,75 @@
         justify-content: space-evenly;
         height: 300px;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: start;
         gap: 10px;
         margin: 0% 50px;
         width: 50%;
+
         .contenedor {
             display: flex;
             flex-direction: row;
-            justify-content: end;
             align-items: center;
             column-gap: 20px;
             flex-wrap: wrap;
+
 
             .precio {
                 font-size: 20px;
             }
 
-            .stock {
-                font-size: 13px;
-                color: #333333;
-                margin-bottom: 5px;
-            }
+
 
             .cantidadContainer {
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-                gap: 10px;
+                gap: 5px;
+                flex-wrap: wrap;
+
+                .stock {
+                    font-size: 13px;
+                    color: #333333;
+                    margin-top: 8px;
+                }
+
+                .botonesYCantidad {
+                    display: flex;
+                    align-items: center;
+                    height: 30px;
+                    width: 85px;
+                    border: 0.5px solid #00000096;
+                    font-size: 14px;
+
+                    .qtyButton {
+                        background: none;
+                        cursor: pointer;
+                        font-style: 18px;
+                        font-weight: 600;
+                        margin: 4px;
+                        border: none;
+
+                    }
+
+                    .cantidadProducto {
+                        margin: 5px 0px;
+                        background: none;
+                        padding: 0px 10px;
+                        border-right: 1px solid #ccc;
+                        border-left: 1px solid #ccc;
+                    }
+
+                    .qtyButton:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
             }
 
             .botonAgregar {
-                color: black;
-                height: 30px;
-                width: 80px;
+                color: rgb(0, 0, 0);
+                height: 32px;
+                width: 100px;
                 border-radius: 15px;
                 cursor: pointer;
                 background: none;
@@ -65,24 +102,10 @@
             }
 
             .botonAgregar:hover {
-                animation: pulse 0.4s;
+                transform: scale(1.05);
             }
 
-            .qtyButton {
-                padding: 6px 12px;
-                background: none;
-                border-radius: 500px;
-                cursor: pointer;
-                font-style: 18px;
-                font-weight: 600;
-                border: 0.5px solid #000;
-                height: 35px;
-                width: 35px;
-            }
 
-            .qtyButton:hover {
-                animation: pulse 0.4s;
-            }
 
             @keyframes pulse {
                 0% {

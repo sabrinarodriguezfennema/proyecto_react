@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import Header from '../components/estaticos/Header'
 import Footer from '../components/estaticos/Footer'
 import './styles/Formulario.css'
 import loading from '../assets/loading.gif'
+import { CartContext } from '../context/CartContext'
 
-const Contactos = ({ cargando, agregarCarrito, quitarCarrito, cart }) => {
+const Contactos = () => {
+	const { cargando } = useContext(CartContext)
 	const [datos, setDatos] = useState({});
 	const [errores, setErrores] = useState({});
 
@@ -48,7 +50,7 @@ const Contactos = ({ cargando, agregarCarrito, quitarCarrito, cart }) => {
 
 	return (
 		<div>
-			<Header agregarCarrito={agregarCarrito} quitarCarrito={quitarCarrito} cartItems={cart} />
+			<Header/>
 			<main>
 		{cargando ? <img src={loading} alt='loading' style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '9999', width: '50px', height: '50px'}} /> :
 		 

@@ -1,8 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 import Product from './Product';
 import './styleCarrusel.css';
+import { CartContext } from '../context/CartContext';
 
-const ProductListCarrusel = ({ productos, agregarCarrito }) => {
+const ProductListCarrusel = () => {
+
+  const { productos, agregarCarrito } = useContext(CartContext)
   const [indice, setIndice] = useState(0);
   const [productosPorSlide, setProductosPorSlide] = useState(1);
   const contenedorRef = useRef(null);

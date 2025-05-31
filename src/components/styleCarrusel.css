@@ -18,11 +18,10 @@
   cursor: pointer;
   color: #333;
   padding: 8px;
-  transition: transform 0.2s ease;
 }
 
 .botonCarrusel:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   color: #555;
 }
 

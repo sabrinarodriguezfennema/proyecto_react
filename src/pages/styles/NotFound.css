@@ -31,5 +31,5 @@
 }
 
 .boton:hover {
-    animation: pulse 0.4s;
+    transform: scale(1.05);
 }

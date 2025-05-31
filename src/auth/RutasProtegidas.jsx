@@ -1,15 +1,11 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
 
-const RutasProtegidas = () => {
+const RutasProtegidas = ({isAuthenticated, children}) => {
     if (!isAuthenticated){
-        return <Navigate to='/login'></Navigate>
+        return <Navigate to= "/login" replace />
     }
-  return (
-    <div>
-      
-    </div>
-  )
+    return children;
 }
 
 export default RutasProtegidas

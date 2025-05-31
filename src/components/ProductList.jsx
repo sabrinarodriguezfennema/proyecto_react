@@ -1,7 +1,9 @@
-import React from 'react'
+import React ,{useContext} from 'react'
 import Product from './Product'
+import { CartContext  } from '../context/CartContext'
 
-const ProductList = ({productos, agregarCarrito}) => {
+const ProductList = () => {
+  const { productos, agregarCarrito } = useContext(CartContext)
   
   return (
     <>
