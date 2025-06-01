@@ -5,7 +5,7 @@ import { CartContext } from '../context/CartContext';
 
 const ProductListCarrusel = () => {
 
-  const { productos, agregarCarrito } = useContext(CartContext)
+  const { productos, handleAddToCart } = useContext(CartContext)
   const [indice, setIndice] = useState(0);
   const [productosPorSlide, setProductosPorSlide] = useState(1);
   const contenedorRef = useRef(null);
@@ -61,7 +61,7 @@ const ProductListCarrusel = () => {
               key={producto.id}
              className="cardProducto"
             >
-              <Product producto={producto} agregarCarrito={agregarCarrito} />
+              <Product producto={producto} handleAddToCart={handleAddToCart} />
             </div>
           ))}
         </div>

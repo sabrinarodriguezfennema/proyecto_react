@@ -8,7 +8,7 @@ import loading from '../assets/loading.gif'
 import { CartContext } from '../context/CartContext'
 
 const DetallesProductos = () => {
-  const { cargando, productos } = useContext(CartContext)
+  const { cargando, productos,  handleAddToCart} = useContext(CartContext)
   const [cantidad, setCantidad] = useState(1);
   const incrementar = () => setCantidad(prev => (prev < product.stock ? prev + 1 : prev));
   const decrementar = () => setCantidad(prev => (prev < 1 ? prev - 1 : 1));
@@ -39,7 +39,7 @@ const DetallesProductos = () => {
               <div className='contenedor'>
                 <div style={{display:'flex', flexDirection: 'column',  }}>
                 <p className='precio'>${product.precio}</p>
-                <button className='botonAgregar' onClick={() => { agregarCarrito(product, cantidad), reiniciarCantidad() }}>Agregar</button>
+                <button className='botonAgregar' onClick={() => { handleAddToCart(product, cantidad), reiniciarCantidad() }}>Agregar</button>
               </div>
                <div className='cantidadContainer'>
               <p className='stock'>Stock: {product.stock}</p>

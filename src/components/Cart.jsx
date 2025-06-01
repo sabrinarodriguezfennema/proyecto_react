@@ -3,7 +3,7 @@ import './styleCart.css'
 import { CartContext } from '../context/CartContext';
 
 const Cart = ({ isOpen, onClose }) => {
-	 const {cart, agregarCarrito, quitarCarrito } = useContext(CartContext)
+	 const {cart, handleAddToCart, handleDeleteFromCart } = useContext(CartContext)
 	
 	const totalValue = useMemo(() => {
 		const precios = cart.map((item) => item.precio);
@@ -36,9 +36,9 @@ const Cart = ({ isOpen, onClose }) => {
 
 
 											<div style={{ display: 'flex', flexDirection: 'row' , fontSize:'13px', border: '0.5px solid #00000096'}}>
-												<button className='qtyButton' onClick={() => quitarCarrito(item)}>-</button>
+												<button className='qtyButton' onClick={() => handleDeleteFromCart(item)}>-</button>
 												<p className='cantidadProducto'>{item.quantity}</p>
-												<button className='qtyButton' onClick={() => agregarCarrito(item, 1)}>+</button>
+												<button className='qtyButton' onClick={() => handleAddToCart(item, 1)}>+</button>
 											</div>
 										</li>
 									</div>))}

@@ -3,7 +3,7 @@ import Product from './Product'
 import { CartContext  } from '../context/CartContext'
 
 const ProductList = () => {
-  const { productos, agregarCarrito } = useContext(CartContext)
+  const { productos, handleAddToCart } = useContext(CartContext)
   
   return (
     <>
@@ -11,7 +11,7 @@ const ProductList = () => {
         <div style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', marginTop: '100px'}}>
           {
             productos.map(producto =>(
-              <Product key={producto.id} producto={producto} agregarCarrito={agregarCarrito}/>
+              <Product key={producto.id} producto={producto} handleAddToCart={handleAddToCart}/>
             ))
           }
         </div>
