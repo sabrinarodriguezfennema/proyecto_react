@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     useEffect(() => {
-        fetch('/data/data.json')
+        fetch('https://6818fb385a4b07b9d1d19231.mockapi.io/productos-ecommerce/productos')
             .then(respuesta => respuesta.json())
             .then(datos => {
                 setTimeout(() => {

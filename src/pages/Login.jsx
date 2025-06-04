@@ -1,6 +1,7 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { CartContext } from '../context/CartContext'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const { setIsAuthenticated } = useContext(CartContext)
@@ -9,6 +10,14 @@ const Login = () => {
   const [error, setError] = useState({})
   const navigate = useNavigate()
 
+  useEffect(() => {
+    const isAuthenticated = localStorage.getItem('isAuthenticated') === true
+    if (isAuthenticated){
+      setIsAuthenticated(true)
+      navigate ('/admin')
+    }
+  },[])
+  
  const handleSubmit = async (e) => {
   e.preventDefault()
 
@@ -32,14 +41,14 @@ const Login = () => {
       setError({ email: 'Credenciales inválidas' })
     } else {
       if (foundUser.role === 'admin') {
-        setIsAuthenticated(true)
-        navigate('/admin')
+        setIsAuthenticated(true);
+        localStorage.setItem('isAuthenticated', true);
+        navigate('/admin');
       } else {
-        navigate('/')
+        navigate('/');
       }
     }
   } catch (err) {
-     console.error("Error al hacer fetch o parsear JSON:", err);
     setError({
       email: 'Algo salió mal. Por favor, inténtalo más tarde',
     })
@@ -50,7 +59,9 @@ const Login = () => {
 
   return (
     <div className='contenedorForm'>
+      
       <form onSubmit={handleSubmit} className='form'>
+        <div><Link to='/' className='link'><i className="far fa-share-square fa-rotate-180"></i></Link></div>
         <h2 className='tituloform'>Iniciar Sesión</h2>
 
         <div>
@@ -74,7 +85,7 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          {error.password && <div >{error.password}</div>}
+          {error.password && <div className='error'>{error.password}</div>}
         </div>
 
         <button type="submit" className='botonSubmit'>
