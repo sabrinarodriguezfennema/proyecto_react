@@ -1,114 +1,17 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import loadingImagen from '../assets/loading.gif';
-import { Link } from "react-router-dom";
 import FormularioEdicion from "../components/FormularioEdicion";
 import FormularioProducto from "../components/FormularioProducto";
 import { CartContext } from "../context/CartContext";
+import { useNavigate } from "react-router-dom"; 
+import { AdminContext } from "../context/AdminContext";
 
 const Admin = () => {
-    const { setIsAuthenticated } = useContext(CartContext)
-    const [productos, setProductos] = useState([]);
-    const apiUrl = "https://6818fb385a4b07b9d1d19231.mockapi.io/productos-ecommerce/productos";
-    const [loading, setLoading] = useState(true);
-    const [seleccionado, setSeleccionado] = useState(null);
-    const [openEditor, setOpenEditor] = useState(false);
-    const [open, setOpen] = useState(false);
+    const { setIsAuthenticated, handleAddToCart, productosFiltrados, busqueda, setBusqueda } = useContext(CartContext);
+    const { productos, loading, open, openEditor, setOpen, setOpenEditor, seleccionado, handleEdit, agregarProducto, actualizarProducto, eliminarProducto} =  useContext(AdminContext)
+    const navigate = useNavigate()
 
-    useEffect(() => {
-        fetch(apiUrl)
-            .then((response) => response.json())
-            .then((data) => {
-                setTimeout(() => {
-                    setProductos(data);
-                    setLoading(false);
-                }, 2000);
-            })
-            .catch((error) => {
-                console.error("Error fetching data:", error);
-                setLoading(false);
-            });
-    }, []);
-    // useEffect(() => {
-    //     if (seleccionado) {
-    //         setOpenEditor(true);
-    //     }
-    // }, [seleccionado]);
-
-    const handleEdit = (product) => {
-        setSeleccionado(product);
-        setOpenEditor(true);
-        console.log(product)
-    }
-
-
-    const cargarProductos = async () => {
-        try {
-            const res = await fetch(apiUrl);
-            const data = await res.json();
-            setProductos(data);
-        } catch (error) {
-            console.log('Error al cargar productos', error);
-        }
-    };
-
-    const agregarProducto = async (producto) => {
-        try {
-            const respuesta = await fetch(apiUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(producto)
-            });
-            if (!respuesta.ok) {
-                throw new Error('Error al agregar el producto');
-            }
-            await respuesta.json();
-            alert('Producto agregado correctamente');
-            setOpen(false);
-            cargarProductos();
-        } catch (error) {
-            console.log(error.message);
-        }
-    };
-
-    const actualizarProducto = async (producto) => {
-        try {
-            const res = await fetch(`${apiUrl}/${producto.id}`, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(producto)
-            });
-            if (!res.ok) throw new Error('Error al actualizar el producto');
-            const data = await res.json();
-            alert('Producto actualizado correctamente');
-            setOpenEditor(false);
-            setSeleccionado(null);
-            cargarProductos();
-        } catch (error) {
-            console.log(error.message);
-        }
-    };
-
-    const eliminarProducto = async (id) => {
-        const confirmar = window.confirm('¿Estás seguro de eliminar el producto?');
-        if (confirmar) {
-            try {
-                const respuesta = await fetch(`${apiUrl}/${id}`, {
-                    method: 'DELETE',
-                });
-                if (!respuesta.ok) throw new Error('Error al eliminar');
-                alert('Producto eliminado correctamente');
-                cargarProductos();
-            } catch (error) {
-                alert('Hubo un problema al eliminar el producto');
-                console.error(error);
-            }
-        }
-    };
-
+   
     return (
         <div>
             {loading ? (
@@ -132,25 +35,25 @@ const Admin = () => {
                             <li className="navItem">
                                 <div className="adminNav">
                                     <button className='volver' onClick={() => {
-                                        setIsAuthenticated(false);
                                         navigate('/');
-                                        localStorage.removeItem('isAuthenticated');
-                                    }}><Link style={{
-                                        textDecoration: 'none'
-                                    }} to='/'  >Volver</Link></button>
+                                    }}>Volver</button>
                                 </div>
                             </li>
                             <li className="navItem">
-                                <button className="navButton" >
-                                    <a href="/admin"><i className="far fa-share-square fa-rotate-180"></i></a>
+                                <button className="navButton"  onClick={() => {
+                                        setIsAuthenticated(false);
+                                        navigate('/');
+                                        localStorage.removeItem('isAuthenticated');}}>
+                                    <i className="far fa-share-square fa-rotate-180"></i>
                                 </button>
                             </li>
                         </ul>
                     </nav>
                     <h1 className="titulo">Panel Administrativo</h1>
+                    <input style={{marginTop:'100px', marginLeft:'20px'}} type="text" placeholder='Buscar producto...' value={busqueda} onChange={(e) => setBusqueda(e.target.value)} />
 
                     <ul className="list">
-                        {productos.map((product) => (
+                        {productosFiltrados.map((product) => (
                             <li key={product.id} className="listItem">
                                 <img
                                     src={product.imagen}

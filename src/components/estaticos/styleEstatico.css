@@ -167,3 +167,14 @@ footer {
         color: black;
     }
 }
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+.link.active {
+  font-weight: bold;
+  color: #333;
+}

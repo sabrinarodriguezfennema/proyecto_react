@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import SobreNosotros from './pages/SobreNosotros';
 import Productos from './pages/Productos';
@@ -15,7 +15,6 @@ function App() {
   const {cart, productos, cargando, error, handleAddToCart, handleDeleteFromCart, isAuthenticated } = useContext (CartContext)
 
   return (
-    <Router>
       <Routes>
 
         <Route path='/' element={<Home />} />
@@ -37,7 +36,6 @@ function App() {
 
 
       </Routes>
-    </Router>
   )
 }
 
