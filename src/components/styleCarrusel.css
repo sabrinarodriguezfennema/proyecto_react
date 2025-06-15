@@ -47,7 +47,7 @@
   .cardProducto {
     flex: 0 0 auto;
     width: 150px;
-    height: 200px;
+    height: auto;
   }
 
   .contenedorCarrusel {

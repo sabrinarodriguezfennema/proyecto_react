@@ -94,8 +94,9 @@
 
     .card {
         width: 140px;
-        height: 180px;
+        height: 210px;
         padding-bottom: 5px;
+       
     }
 
     .nombre {
@@ -110,14 +111,17 @@
     .botonAgregar {
         height: 20px;
         width: 60px;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .botonVerMas {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .card:hover {
         transform: none;
+    }
+    .datosProductos{
+        gap: 5px
     }
 }
