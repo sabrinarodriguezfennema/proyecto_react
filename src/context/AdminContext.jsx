@@ -98,8 +98,10 @@ export const AdminProvider = ({ children }) => {
             }
         }
     };
+    
+
     return (
-        <AdminContext.Provider value={{productos, loading, open, openEditor, setOpen, setOpenEditor, seleccionado, setSeleccionado, agregarProducto, actualizarProducto, eliminarProducto, handleEdit}}>
+        <AdminContext.Provider value={{ productos, loading, open, openEditor, setOpen, setOpenEditor, seleccionado, setSeleccionado, agregarProducto, actualizarProducto, eliminarProducto, handleEdit }}>
             {children}
         </AdminContext.Provider>
     )

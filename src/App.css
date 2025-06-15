@@ -28,22 +28,43 @@
   /* Evita que se repita */
 }
 
+.tren {
+  width: 100%;
+  background-color: #ecc0a4;
+  padding: 2rem;
+  font-size: 1.5rem;
+  position: relative;
+  animation: moverTren 10s linear infinite;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@keyframes moverTren {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 .seccionInfo {
-  margin: 100px;
+  margin: 50px 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 50px;
   font-weight: 300;
 
   .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 20px;
-    gap: 50px;
+    font-size: 15px;
+    gap: 20px;
 
     .fa-bounce,
     .fa-flip,
@@ -68,26 +89,26 @@
   justify-content: space-between;
 }
 
-.adminNav {
-  text-decoration: none;
-  background-color: #F0F0F0;
+
+
+.volver {
   cursor: pointer;
-  width: 60px;
-  height: 20px;
-  text-align: center;
-  border-radius: 5px;
-  
-}
-.volver{
-  text-decoration: none;
+  background: none;
   border: none;
-  font-size: 12px;
-  color: #000;
-  cursor: pointer;
+  font-size: 20px;
+  .fa-undo-alt{
+    color: #F0F0F0;;
+  }
 }
+
 .navButton {
   cursor: pointer;
-  border-radius: 5px;
+  background: none;
+  font-size: 20px;
+  border: none;
+  .fa-right-from-bracket{
+    color: #F0F0F0;
+  }
 }
 
 .navItem:hover {
@@ -142,12 +163,14 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .botonSubmit:hover{
+
+    .botonSubmit:hover {
       transform: scale(1.05);
     }
-    .error{
+
+    .error {
       color: red;
-      font-size:14px;
+      font-size: 14px;
       margin-block-end: 0.5rem;
     }
   }
@@ -178,9 +201,11 @@
   border: none;
   cursor: pointer;
 }
-.button:hover{
+
+.button:hover {
   transform: scale(1.01);
 }
+
 .list {
   list-style: none;
   padding: 10px;
@@ -212,14 +237,16 @@
 }
 
 .editButton {
-  height: 25px;
-  width: 80px;
+  margin-top: 10px;
+  border: none;
   margin-right: 10px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border-radius: 10px;
   cursor: pointer;
+  background: none;
+  font-size: 18px;
 
+  .fa-edit {
+    color: black;
+  }
 }
 
 .editButton:hover {
@@ -227,13 +254,15 @@
 }
 
 .deleteButton {
-  height: 25px;
-  width: 80px;
-  background-color: #f44336;
-  color: white;
-  border-radius: 10px;
+  margin-top: 10px;
   border: none;
   cursor: pointer;
+  background: none;
+  font-size: 18px;
+
+  .fa-trash-alt {
+    color: black
+  }
 }
 
 .deleteButton:hover {
@@ -247,19 +276,230 @@
 
 
 .botonAbrirFormulario {
-    margin: 20px;
-    padding: 8px;
-    width: 300px;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid #000000;
-    transition: transform 0.2s ease;
+  margin: 20px;
+  padding: 8px;
+  width: 300px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  transition: transform 0.2s ease;
 }
 
 .botonAbrirFormulario:hover {
-    transform: scale(1.05);
-  
+  transform: scale(1.05);
+
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+
+.menu-button {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.cartnav {
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.drawer-menu {
+  display: flex !important;
+  flex-direction: row;
+  position: static;
+  transform: none;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-button {
+  display: none;
+}
+
+.contenedorBuscador {
+  margin: 30px 30px;
+
+  .buscador {
+    margin-right: 5px;
+    padding-left: 10px;
+    height: 25px;
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .fa-search {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tren {
+    width: 100%;
+    height: 50px;
+    background-color: #ecc0a4;
+    font-size: 12px;
+    animation: moverTren 8s linear infinite;
+  }
+
+  @keyframes moverTren {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+
+  .titulo {
+    padding-top: 10px;
+    font-size: 30px;
+  }
+
+  .imagenFondo {
+    width: 100%;
+    height: 100px;
+  }
+
+  .oferta {
+    height: 200px;
+  }
+
+
+  .seccionInfo {
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 300;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      gap: 10px;
+
+      .fa-bounce,
+      .fa-flip,
+      .fa-shake {
+        font-size: 4em;
+        margin: 20px;
+        animation-duration: var(--fa-animation-duration, 2s);
+
+
+      }
+    }
+
+  }
+
+  .menu-button {
+    display: block;
+    font-size: 15px;
+  }
+
+  .drawer-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .drawer-menu.open {
+    transform: translateX(0%);
+  }
+
+
+  .contenedorForm {
+    justify-content: initial;
+
+    .form {
+      align-items: center;
+      box-shadow: none;
+
+      .tituloform {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+
+      .label {
+
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+
+      }
+
+      .input {
+        width: 100%;
+      }
+
+      .botonSubmit {
+        margin-left: 15px;
+        width: 55%;
+      }
+
+      .link {
+        padding-left: 300px;
+      }
+
+    }
+  }
+
+  .contenedorBuscador {
+    .buscador {
+      height: 15px;
+      width: 150px;
+      border-radius: 10px;
+    }
+
+    .fa-search {
+      font-size: 15px;
+    }
+
+
+  }
+
+  .fa-cart-shopping {
+    font-size: 15px;
+  }
+
 }

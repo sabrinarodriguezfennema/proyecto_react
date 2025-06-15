@@ -1,4 +1,5 @@
 .contenedorCarrusel {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   gap: 5px;
@@ -26,9 +27,9 @@
 }
 
 .carruselVista {
+  width: 100%;
   flex: 1;
   overflow: hidden;
-  width: 100%;
 }
 
 .carruselTrack {
@@ -40,4 +41,48 @@
   flex: 0 0 auto;
   width: 250px;
   height: 310px;
+}
+
+@media (max-width: 768px) {
+  .cardProducto {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 200px;
+  }
+
+  .contenedorCarrusel {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    height: 250px;
+    align-items: center;
+    font-size: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .carruselVista {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carruselTrack {
+    transform: none !important;
+    width: auto;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .cardProducto {
+    scroll-snap-align: start;
+  }
+
+  .botonCarrusel {
+    display: none;
+  }
+
 }

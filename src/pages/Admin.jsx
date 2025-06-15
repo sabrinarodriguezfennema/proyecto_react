@@ -3,15 +3,15 @@ import loadingImagen from '../assets/loading.gif';
 import FormularioEdicion from "../components/FormularioEdicion";
 import FormularioProducto from "../components/FormularioProducto";
 import { CartContext } from "../context/CartContext";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import { AdminContext } from "../context/AdminContext";
 
 const Admin = () => {
-    const { setIsAuthenticated, handleAddToCart, productosFiltrados, busqueda, setBusqueda } = useContext(CartContext);
-    const { productos, loading, open, openEditor, setOpen, setOpenEditor, seleccionado, handleEdit, agregarProducto, actualizarProducto, eliminarProducto} =  useContext(AdminContext)
+    const { setIsAuthenticated, productosFiltrados, busqueda, setBusqueda } = useContext(CartContext);
+    const {loading, open, openEditor, setOpen, setOpenEditor, seleccionado, handleEdit, agregarProducto, actualizarProducto, eliminarProducto } = useContext(AdminContext)
     const navigate = useNavigate()
 
-   
+
     return (
         <div>
             {loading ? (
@@ -33,25 +33,27 @@ const Admin = () => {
                     <nav>
                         <ul className="nav">
                             <li className="navItem">
-                                <div className="adminNav">
-                                    <button className='volver' onClick={() => {
+                                <div>
+                                    <button className='volver' title="Volver al inicio" onClick={() => {
                                         navigate('/');
-                                    }}>Volver</button>
+                                    }}> <i className="fas fa-undo-alt"></i></button>
                                 </div>
                             </li>
                             <li className="navItem">
-                                <button className="navButton"  onClick={() => {
-                                        setIsAuthenticated(false);
-                                        navigate('/');
-                                        localStorage.removeItem('isAuthenticated');}}>
-                                    <i className="far fa-share-square fa-rotate-180"></i>
+                                <button className="navButton" title="Cerrar sesión" onClick={() => {
+                                    setIsAuthenticated(false);
+                                    navigate('/');
+                                    localStorage.removeItem('isAuthenticated');
+                                }}>
+                                  <i className="fa-solid fa-right-from-bracket"></i>
                                 </button>
                             </li>
                         </ul>
                     </nav>
                     <h1 className="titulo">Panel Administrativo</h1>
-                    <input style={{marginTop:'100px', marginLeft:'20px'}} type="text" placeholder='Buscar producto...' value={busqueda} onChange={(e) => setBusqueda(e.target.value)} />
-
+                    <div className="contenedorBuscador">
+                        <input className="buscador" type="text" placeholder='Buscar producto...' value={busqueda} onChange={(e) => setBusqueda(e.target.value)} /> <i className="fas fa-search"></i>
+                    </div>
                     <ul className="list">
                         {productosFiltrados.map((product) => (
                             <li key={product.id} className="listItem">
@@ -63,10 +65,10 @@ const Admin = () => {
                                 <span>{product.nombre}</span>
                                 <span>${product.precio}</span>
                                 <div>
-                                    <button className="editButton" onClick={() => {
+                                    <button className="editButton" title="Editar" onClick={() => {
                                         handleEdit(product);
-                                    }}>Editar</button>
-                                    <button className="deleteButton" onClick={() => eliminarProducto(product.id)}>Eliminar</button>
+                                    }}><i className="fas fa-edit"></i></button>
+                                    <button className="deleteButton" title="Eliminar" onClick={() => eliminarProducto(product.id)}><i className="fas fa-trash-alt"></i></button>
                                 </div>
                             </li>
                         ))}

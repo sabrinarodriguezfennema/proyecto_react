@@ -1,5 +1,5 @@
 .principalContactos {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 1em;
     color: black;
     padding: 30px;
@@ -92,4 +92,42 @@
 
     }
 
+}
+.mapa{
+    width: 400px;
+}
+
+@media (max-width: 768px) {
+    .principalContactos {
+        font-size: 0.8em;
+        .contenedor {
+            font-size: 1rem;
+            row-gap: 0px;
+            .contacto {
+                margin-bottom: 15px;
+            }
+
+        }
+
+        .items {
+            width: 300px;
+            height: 20px;
+
+        }
+
+        .itemMensaje {
+            height: 50px;
+        }
+
+        .boton {
+            height: 20px;
+        }
+
+        
+
+    }
+    .mapa{
+        margin-top: 30px;
+    width: 300px;
+}
 }

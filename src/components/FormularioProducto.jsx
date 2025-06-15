@@ -47,7 +47,7 @@ const FormularioProducto = ({ onAgregar, setOpen }) => {
         });
     };
     return (
-        <div className="modal-overlay" onClick={() => setOpen(false)}>
+        <div id='agregar' className="modal-overlay" onClick={() => setOpen(false)}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className='contenedorForm'>
                     <div style={{ backgroundColor: 'white', margin: '0px 50px', borderRadius: '20px' }}>

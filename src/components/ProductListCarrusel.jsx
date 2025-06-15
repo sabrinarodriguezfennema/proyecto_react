@@ -10,7 +10,14 @@ const ProductListCarrusel = () => {
   const [productosPorSlide, setProductosPorSlide] = useState(1);
   const contenedorRef = useRef(null);
   const anchoCard = 250;
+  const [esMobile, setEsMobile] = useState(false);
 
+  useEffect(() => {
+    const detectarMobile = () => setEsMobile(window.innerWidth <= 768);
+    detectarMobile();
+    window.addEventListener('resize', detectarMobile);
+    return () => window.removeEventListener('resize', detectarMobile);
+  }, []);
   useEffect(() => {
     const actualizarCantidad = () => {
       if (contenedorRef.current) {
@@ -44,22 +51,19 @@ const ProductListCarrusel = () => {
       </button>
 
       <div
-        className="carruselVista"
-        style={{
-          overflow: 'hidden',
-          width: '100%',
-        }}
-      >
+        className="carruselVista">
         <div
           className="carruselTrack"
           style={{
-            transform: `translateX(-${indice * productosPorSlide * anchoCard}px)`
+            transform: esMobile
+              ? 'none'
+              : `translateX(-${indice * productosPorSlide * anchoCard}px)`,
           }}
         >
           {productos.map((producto) => (
             <div
               key={producto.id}
-             className="cardProducto"
+              className="cardProducto"
             >
               <Product producto={producto} handleAddToCart={handleAddToCart} />
             </div>

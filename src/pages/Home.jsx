@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import Header from '../components/estaticos/Header'
 import Footer from '../components/estaticos/Footer'
 import ProductListCarrusel from '../components/ProductListCarrusel'
@@ -15,7 +15,7 @@ const Home = () => {
       <Header />
       <main>
         {
-          cargando ? <img src={loading} alt='loading' style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '9999', width: '50px', height: '50px'}} /> :
+          cargando ? <img src={loading} alt='loading' style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '9999', width: '50px', height: '50px' }} /> :
             <div>
               <section className='imagenFondo'></section>
               <section className='seccionInfo'>
@@ -23,7 +23,7 @@ const Home = () => {
                   <i className="fa-solid fa-truck-moving fa-bounce"></i>
                   <p>Envios a todo el pais.</p>
                 </div>
-                <div className='item'> 
+                <div className='item'>
                   <i className="fa-regular fa-credit-card fa-flip"></i>
                   <p>Todos los medios de pago.</p>
                 </div>
@@ -32,7 +32,13 @@ const Home = () => {
                   <p>Atencion personalizada.</p>
                 </div>
               </section>
+              <section className="tren">
+                <h2>¡PROMOCIÓN DE INVIERNO!</h2>
+                <h3>Llevá 2 prendas y pagá 1 en abrigos seleccionados.</h3>
+                <h4>Solo hasta el 30/06. En tienda física y online.</h4>
+              </section>
               <ProductListCarrusel />
+              
             </div>
 
         }

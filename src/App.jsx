@@ -12,7 +12,7 @@ import Admin from './pages/Admin';
 import { CartContext } from './context/CartContext';
 
 function App() {
-  const {cart, productos, cargando, error, handleAddToCart, handleDeleteFromCart, isAuthenticated } = useContext (CartContext)
+  const {isAuthenticated } = useContext (CartContext)
 
   return (
       <Routes>
@@ -27,7 +27,7 @@ function App() {
 
         <Route path='/contacto' element={<Contactos />} />
         
-        <Route path='/admin' element={<RutaProtegidas isAuthenticated={isAuthenticated}> <Admin  cart={cart} cargando={cargando} /> </RutaProtegidas>} />
+        <Route path='/admin' element={<RutaProtegidas isAuthenticated={isAuthenticated}> <Admin /> </RutaProtegidas>} />
 
         <Route path='/login' element={<Login />} />
         

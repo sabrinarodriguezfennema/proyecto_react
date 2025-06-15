@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import Footer from '../components/estaticos/Footer'
 import Header from '../components/estaticos/Header'
 import './styles/DetalleProducto.css'
@@ -35,7 +34,6 @@ const DetallesProductos = () => {
               <div className='detalleProducto'>
                 <p >{product.detalle}</p>
               </div>
-
               <div className='contenedor'>
                 <div style={{display:'flex', flexDirection: 'column',  }}>
                 <p className='precio'>${product.precio}</p>

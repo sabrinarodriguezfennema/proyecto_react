@@ -1,5 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
-import { CartContext } from '../context/CartContext'
+import React from 'react'
 import { useAuth } from '../context/AuthContext';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ const Login = () => {
     <div className='contenedorForm'>
 
       <form onSubmit={handleSubmit} className='form'>
-        <div><Link to='/' className='link'><i className="far fa-share-square fa-rotate-180"></i></Link></div>
+        <div><Link to='/' className='link' title="Volver"> <i className="fas fa-undo-alt"></i> </Link></div>
         <h2 className='tituloform'>Iniciar Sesión</h2>
 
         <div>

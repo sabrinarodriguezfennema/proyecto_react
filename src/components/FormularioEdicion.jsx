@@ -19,7 +19,7 @@ const FormularioEdicion = ({ seleccionado, onActualizar, setOpenEditor }) => {
     }
 
     return (
-        <div className="modal-overlay" onClick={() => handleCloseModal()}>
+        <div id='editar' className="modal-overlay" onClick={() => handleCloseModal()}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className='contenedorForm'>
                     <div style={{ backgroundColor: 'white', margin: '0px 50px', borderRadius: '20px' }}>

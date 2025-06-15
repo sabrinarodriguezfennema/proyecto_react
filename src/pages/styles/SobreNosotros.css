@@ -37,3 +37,41 @@
     }
 
 
+@media (max-width: 768px){
+    .seccionParrafo{
+    margin: 20px;
+    font-size: 12px;
+    padding: 0% 20px;
+    .titulo {
+        font-size: 2em;
+        text-align: center;
+    }
+    p{
+        margin-top: 10px;
+    }
+}
+
+    .contenedorPorDescripcion {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin: 20px;
+        
+    font-size: 12px;
+        padding:0% 30px;
+        .itemContenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            li{
+                list-style:circle;
+                margin-top: 10px;
+            }
+        }
+
+        .descripcion {
+            font-size: 20px;
+            
+        }
+    }
+}

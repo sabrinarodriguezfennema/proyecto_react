@@ -3,7 +3,7 @@ import Product from './Product'
 import { CartContext } from '../context/CartContext'
 
 const ProductList = () => {
-  const { productos, handleAddToCart, productosFiltrados, busqueda, setBusqueda } = useContext(CartContext);
+  const { handleAddToCart, productosFiltrados, busqueda, setBusqueda } = useContext(CartContext);
 
   console.log(busqueda);
 
@@ -11,7 +11,9 @@ const ProductList = () => {
   return (
     <>
       <div>
-        <input style={{marginTop:'100px', marginLeft:'20px'}} type="text" placeholder='Buscar producto...' value={busqueda} onChange={(e) => setBusqueda(e.target.value)} />
+        <div className="contenedorBuscador">
+          <input className="buscador" type="text" placeholder='Buscar producto...' value={busqueda} onChange={(e) => setBusqueda(e.target.value)}  style={{marginTop:'60px'}}/> <i class="fas fa-search"></i>
+        </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', marginTop: '20px' }}>
 
           {

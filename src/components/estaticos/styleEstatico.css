@@ -14,16 +14,18 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 90%;
     gap: 15px;
-    margin-right: 40px;
     color: black;
 }
 
 .navegacion {
     display: flex;
     flex-direction: row;
+    width: 100%;
 
+    .navegacionMenu {
+        display: flex;
+    }
 }
 
 .liMenu:hover {
@@ -60,12 +62,14 @@ footer {
     margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 5px;
+    flex-wrap: wrap;
 
     .contenedorFooter {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         gap: 10px;
+        flex-wrap: wrap;
 
         .titulos {
             font-size: 12px;
@@ -113,7 +117,10 @@ footer {
                         color: cornflowerblue;
                         cursor: pointer;
                     }
-                    .fa-square-facebook:hover,  .fa-instagram:hover,.fa-twitter:hover{
+
+                    .fa-square-facebook:hover,
+                    .fa-instagram:hover,
+                    .fa-twitter:hover {
                         transform: scale(1.05);
                     }
                 }
@@ -141,7 +148,7 @@ footer {
                         transform: scale(1.05);
                     }
 
-                    
+
                     .box {
                         text-align: left;
                         width: 200px;
@@ -156,25 +163,168 @@ footer {
     }
 }
 
+
 .btnCart {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    width: 5px;
-    height: 5px;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
 
     .fa-cart-shopping {
         color: black;
     }
 }
 
+.navegacion {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.menu-button {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cartnav {
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.drawer-menu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 15px;
+    position: static;
+    transform: none;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-button {
+    display: none;
+}
+
 .link {
-  text-decoration: none;
-  color: black;
-  font-weight: normal;
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
 }
 
 .link.active {
-  font-weight: bold;
-  color: #333;
+    font-weight: bold;
+    color: #000;
+    /* opcional: cambia el color también */
+}
+
+.btn-close {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navegacion {
+        width: 100%;
+
+        .navegacionMenu {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 30px;
+            align-items: center;
+            padding-right: 10px;
+        }
+    }
+
+    .menu-button {
+        display: block;
+        .fa-bars{
+            font-size: 20px;
+        }
+    }
+
+    .drawer-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: white;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+        padding: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .drawer-menu.open {
+        transform: translateX(0%);
+    }
+
+    .btnCart {
+        padding-bottom: 20px;
+        .fa-cart-shopping {
+            font-size: 20px;
+        }
+    }
+
+    footer {
+        .contenedorFooter {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 1001;
+        color: #333;
+        display: block;
+    }
+
+
 }
