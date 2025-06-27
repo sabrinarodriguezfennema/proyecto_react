@@ -41,14 +41,14 @@ const Header = () => {
                                 <NavLink to="/contacto" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'link active' : 'link'}>Contacto</NavLink>
                             </li>
                             <li className="liMenu">
-                                <NavLink to="/admin" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'link active' : 'link'}>
+                                <NavLink to="/admin" aria-label="Ir a admin" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'link active' : 'link'}>
                                     <i className="fas fa-user-alt"></i>
                                 </NavLink>
                             </li>
                         </ul>
                     </div>
                     <div className="cartnav">
-                        <button className="btnCart" onClick={() => setCartOpen(true)}>
+                        <button className="btnCart" aria-label="Abrir carrito" onClick={() => setCartOpen(true)}>
                             <i className="fa-solid fa-cart-shopping"></i>
                         </button>
                         {cart.length !== 0 && (

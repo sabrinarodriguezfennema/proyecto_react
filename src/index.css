@@ -1,18 +1,13 @@
 *{
   margin: 0%;
 }
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
 body{
   font-family: "Lato", sans-serif;
 }
 :root {
   --header-height: 65px;
 }
-
-header {
-  height: var(--header-height);
-}
-
-main {
-  margin-top: var(--header-height);
-}
-

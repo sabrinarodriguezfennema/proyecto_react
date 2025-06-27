@@ -1,16 +1,21 @@
-import React , {useContext} from 'react'
+import React, { useContext } from 'react'
 import Header from '../components/estaticos/Header'
 import Footer from '../components/estaticos/Footer'
 import './styles/SobreNosotros.css'
 import loading from '../assets/loading.gif'
 import { CartContext } from '../context/CartContext'
+import { Helmet } from 'react-helmet-async'
 
 const SobreNosotros = () => {
   const { cargando } = useContext(CartContext);
   return (
     <div>
+      <Helmet>
+        <title>Sobre Nosotros | Feel Pretty</title>
+        <meta name="description" content="Conocé Feel Pretty: nuestra historia, misión y compromiso con la belleza real y accesible." />
+      </Helmet>
       <Header />
-      <main>
+      <main className='contentSobreNosotros'>
         {cargando ? <img src={loading} alt='loading' style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '9999', width: '50px', height: '50px' }} /> :
           <div>
             <div className='seccionParrafo'>

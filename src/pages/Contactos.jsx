@@ -4,6 +4,7 @@ import Footer from '../components/estaticos/Footer'
 import './styles/Formulario.css'
 import loading from '../assets/loading.gif'
 import { CartContext } from '../context/CartContext'
+import { Helmet } from 'react-helmet-async';
 
 const Contactos = () => {
 	const { cargando } = useContext(CartContext)
@@ -50,13 +51,17 @@ const Contactos = () => {
 
 	return (
 		<div>
+			<Helmet>
+				<title>Contacto | Feel Pretty</title>
+				<meta name="description" content="¿Tenés preguntas? Contactanos y nuestro equipo te responderá a la brevedad." />
+			</Helmet>
 			<Header />
-			<main>
+			<div>
+			<main className='contentContacto'>
 				{cargando ? <img src={loading} alt='loading' style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '9999', width: '50px', height: '50px' }} /> :
 
 
 					<div className='principalContactos'>
-
 						<div className='boxContacto'>
 							<h3 style={{ textAlign: 'left', fontSize: '25px', paddingBottom: '10px' }}>Encontranos</h3>
 							<ul className='contenedor'>
@@ -110,6 +115,7 @@ const Contactos = () => {
 				}
 			</main>
 			<Footer />
+			</div>
 		</div>
 	)
 }

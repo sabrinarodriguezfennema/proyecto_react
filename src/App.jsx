@@ -15,6 +15,7 @@ function App() {
   const {isAuthenticated } = useContext (CartContext)
 
   return (
+    
       <Routes>
 
         <Route path='/' element={<Home />} />

@@ -4,14 +4,17 @@ import Footer from '../components/estaticos/Footer'
 import ProductListCarrusel from '../components/ProductListCarrusel'
 import loading from '../assets/loading.gif'
 import { CartContext } from '../context/CartContext'
-
-
+import { Helmet } from 'react-helmet-async';
 const Home = () => {
 
   const { cargando } = useContext(CartContext)
 
   return (
     <div>
+      <Helmet>
+        <title>Inicio | Feel Pretty</title>
+        <meta name="description" content="Descubrí Feel Pretty, tu tienda de belleza y cuidado personal. Productos seleccionados para vos." />
+      </Helmet>
       <Header />
       <main>
         {

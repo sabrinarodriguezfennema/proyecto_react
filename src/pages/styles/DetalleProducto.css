@@ -1,17 +1,25 @@
+.contentDetalle{
+    min-height: 75vh;
+}
+.subtitulo{
+    text-align: center;
+    margin-top: 100px;
+}
 .contenedorPrincipal {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     font-size: 12px;
     column-gap: 0px;
     flex-wrap: wrap;
 
     .contenedorImagen {
         text-align: center;
-        width: 50%;
 
         .imagenProducto {
-            width: 100%;
+            width: 500px;
             height: 300px;
             border-radius: 15px;
             padding: 10px;
@@ -26,8 +34,8 @@
         align-items: center;
         gap: 10px;
         margin: 10px;
-        width: 50%;
         .detalleProducto{
+            width: 500px;
             margin: 10px;
             padding-left: 10px;
             text-align:justify;
@@ -139,7 +147,6 @@
     .subtitulo{
         margin-top: 70px;
         font-size: 20px;
-        text-align: center;
     }
     .contenedorPrincipal {
         .contenedorImagen {

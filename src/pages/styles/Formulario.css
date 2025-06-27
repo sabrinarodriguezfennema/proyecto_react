@@ -1,5 +1,8 @@
+.contentContacto {
+    min-height: 73vh;
+}
 .principalContactos {
-    margin-top: 50px;
+    margin-top: 80px;
     font-size: 1em;
     color: black;
     padding: 30px;
