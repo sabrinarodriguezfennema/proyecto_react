@@ -32,13 +32,15 @@ const Home = () => {
                   <p>Atencion personalizada.</p>
                 </div>
               </section>
-              <section className="tren">
-                <h2>¡PROMOCIÓN DE INVIERNO!</h2>
-                <h3>Llevá 2 prendas y pagá 1 en abrigos seleccionados.</h3>
-                <h4>Solo hasta el 30/06. En tienda física y online.</h4>
-              </section>
+              <div className='tren-wrapper '>
+                <section className="tren">
+                  <h2>¡PROMOCIÓN DE INVIERNO!</h2>
+                  <h3>Llevá 2 prendas y pagá 1 en abrigos seleccionados.</h3>
+                  <h4>Solo hasta el 30/06. En tienda física y online.</h4>
+                </section>
+              </div>
               <ProductListCarrusel />
-              
+
             </div>
 
         }

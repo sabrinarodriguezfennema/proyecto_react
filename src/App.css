@@ -21,20 +21,21 @@
   height: 500px;
   background-image: url(./assets/imagen.png);
   background-size: cover;
-  /* Escala la imagen para cubrir toda la pantalla */
   background-position: top;
-  /* Centra la imagen */
   background-repeat: no-repeat;
-  /* Evita que se repita */
+}
+
+.tren-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .tren {
-  width: 100%;
   background-color: #ecc0a4;
   padding: 2rem;
   font-size: 1.5rem;
   position: relative;
-  animation: moverTren 10s linear infinite;
+  animation: moverTren 12s linear infinite;
   white-space: nowrap;
   text-align: center;
 }
@@ -43,7 +44,6 @@
   0% {
     transform: translateX(-100%);
   }
-
   100% {
     transform: translateX(100%);
   }
@@ -96,8 +96,10 @@
   background: none;
   border: none;
   font-size: 20px;
-  .fa-undo-alt{
-    color: #F0F0F0;;
+
+  .fa-undo-alt {
+    color: #F0F0F0;
+    ;
   }
 }
 
@@ -106,7 +108,8 @@
   background: none;
   font-size: 20px;
   border: none;
-  .fa-right-from-bracket{
+
+  .fa-right-from-bracket {
     color: #F0F0F0;
   }
 }
